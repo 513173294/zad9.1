@@ -4,9 +4,8 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
 
-        Person[] people = new Person[1];
         Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < people.length; i++) {
+
             System.out.println("podaj imnie");
             String name = scanner.nextLine();
             System.out.println("podaj nazwisko");
@@ -21,15 +20,16 @@ public class Test {
                 System.out.println(person);
             } catch (NameUndefinedException e) {
                 System.out.println("podaj przynajmniej 2 znaki");
-                i = 0;
+
+
             } catch (IncorrectAgeException e) {
                 System.out.println("podales za niski wiek");
-                i = 0;
+
             }
 
         }
     }
-}
+
 
 //
 //
