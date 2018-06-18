@@ -50,6 +50,6 @@ public class Test {
         people[i] = person;
         System.out.println(person);
 
-
+i++;
     }
 }
